@@ -1,8 +1,8 @@
 # Quick Start
 
-To quickly start processing payments in Laravel you may use the install command, which will publish all necessary assets, generate the payment gateway skeletons & the config file so you can focus on what's important, the integration.
+To quickly start processing payments in Laravel, you may use the install command, which will publish all necessary assets and generate the payment gateway skeletons & the config file so you can focus on what's important, the integration.
 
-Once the package has been installed, run the `checkout:install` command and follow it's instructions.
+Once you install the package, run the `checkout:install` command and follow its instructions.
 
 ```bash
 php artisan checkout:install
@@ -20,7 +20,7 @@ The command will start by publishing the migration for you. This migration shoul
 
 ## 2. Generating the fake payment gateway.
 
-Then it will automatically generate the `FakePaymentRequest::class` & `FakePaymentResponse::class` files. These files will allow you to leverage the `PAYMENT_TEST_MODE` either for local development or testing.
+Then it will automatically generate the `FakePaymentRequest::class` & `FakePaymentResponse::class` files. These files allow you to leverage the `PAYMENT_TEST_MODE` for local development or testing.
 
 ```bash
 => Fake payment gateway generated successfully!
@@ -28,7 +28,7 @@ Then it will automatically generate the `FakePaymentRequest::class` & `FakePayme
 
 ## 3. Generating your payment gateway(s) of choice.
 
-Now you will be prompted to provide a payment service provider to be integrated into your project.
+Your project will prompt you to provide a payment service provider for integration.
 
 ```bash
 => What payment provider would you like to add?:
@@ -44,7 +44,7 @@ Once provided, it will generate the provider's request & response classes for yo
 => Adyen payment gateway generated successfully!
 ```
 
-You will also be asked if you would like to add another payment provider to your project, you may specify as many as you would like, it will walk you through the process again until you have added all the providers you need.
+The program will also ask if you want to include additional payment providers in your project. You can specify as many as you like, and the system will guide you through the process until you have added all the necessary providers.
 
 ```bash
 => Would you like to add another payment provider? (yes/no) [no]:
@@ -52,7 +52,7 @@ You will also be asked if you would like to add another payment provider to your
 ```
 
 ## 4. Providing a list of merchants.
-In this step you will be prompted to share the merchant accounts your application will be processing payments for.
+At this step, the program will prompt you to share the merchant accounts that your application will use for processing payments.
 
 ```bash
 => What payment merchant would you like to add?:
@@ -61,7 +61,7 @@ In this step you will be prompted to share the merchant accounts your applicatio
 => How would you like to identify the Laravel payment merchant? [laravel]:
 > laravel
 ```
-You may provide as many merchants as needed, this is very helpful when your business is segregated in different areas, and you wish to keep your reporting separate.
+You may provide as many merchants as needed, this is very helpful when your business is segregated in different areas and you wish to keep your reporting separate.
 
 ```bash
 =>  Would you like to add another payment merchant? (yes/no) [no]:
@@ -69,7 +69,7 @@ You may provide as many merchants as needed, this is very helpful when your busi
 ```
 
 ## 5. Generating the payment configuration file.
-As a final step, Payavel will generate your `payment.php` configuration file on your behalf. The foundation is ready, you just need to fill in the blanks.
+As a final step, Payavel will generate your `payment.php` configuration file on your behalf. The foundation is ready; you just need to fill in the blanks.
 
 ```bash
 => The payment config has been successfully generated.
